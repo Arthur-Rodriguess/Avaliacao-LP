@@ -6,8 +6,6 @@ Tema Central: Sistema de Academia
 
 Objetivo: Fazer um sistema de gerenciamento de alunos dentro de uma academia onde, o aluno, poderá cadastrar, ou seja, personalizar seus próprios treinos por sua responsabilidade e risco.
 
-
-
 O que terá?:
 Parte de cadastrar aluno
 Parte de Excluir aluno
@@ -18,8 +16,7 @@ Parte de Listar alunos
 1.1. Nesta parte deve conter exatamente a mesma ideia de código do trabalho, ou seja, na função de atualizar deve conter a parte de 'for índice, aluno in enumerate(lista):' - Essa é uma das coisas que tem que ter para o bom funcionamento do código.
 
 *PARTE CENTRAL*
-2. Parte central - Onde vai ter cronogramas de treinos personalizados - Onde o aluno terá acesso a uma variedade de exercícios (dentro de uma categoria específica) para poder adicionar ao seu treino.
-2.1 Esta parte pode ser modificada para que o próprio usuário digite o seu treino - Ou seja, eu estou em duvidas de como vai sair do papel.
+2. Parte central - Onde vai ter cronogramas de treinos personalizados - Onde o aluno terá acesso a uma variedade de exercícios (dentro de uma categoria específica) para poder adicionar ao seu treino, por exemplo, poderá escolher qual membro vai exercitar, como: braço, perna, ombro, costas. Depois de sua escolha, aparecerá os exercícios disponíveis para a necessidade do aluno.
 2.2 Nesta parte quem vai ficar responsável vai ser o Pedro Gabriel.
 
 *PARTE DE FINALIZAÇÃO*
@@ -36,6 +33,4 @@ Parte de Listar alunos
 
 0.1 - Outra coisa: Os que tem e podem trazer notebooks levará o seu próprio para a escola para que possamos fazer nossas páginas e/ou realizar manutenções. Tudo, obviamente sendo colocado no GitHub.
 
-0.2 - É indispensável que todos coloquem comentários ao longo da sua parte responsável (para não dar confusões na hora de fazer manutenções) e deixem o mesmo com o máximo de legibilidade possível, pois contará como parte da nota.
-
-0.3 - Comecem o quanto antes - Só isso mesmo. 
+0.2 - É indispensável que todos coloquem comentários ao longo da sua parte responsável (para não dar confusões na hora de fazer manutenções) e deixem o mesmo com o máximo de legibilidade possível, pois contará como parte da nota. 
