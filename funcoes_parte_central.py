@@ -959,3 +959,72 @@ def exercicios_liberacao_miofascial():
 
     else:
         print("DIGITO INVÁLIDO/VOLTAR AO CRONOGRAMA DE TREINOS")
+
+#FUNÇÕES DO MENU DA PARTE CENTRAL
+
+#FUNÇÃO ATUALIZAR TREINOS CADASTRADOS PELO PRÓPRIO ALUNO OU DA MÁQUINA MESMO
+def atualizar_treino():
+    print("Quer atualizar um treino?")
+    print("Digite o meio pelo qual removerá o treino: ")
+    print("1 - Pelo Nome")
+    print("2 - Pelo Código")
+    print("3 - Encerrar Programa")
+    print("4 - Voltar ao Menu Central")
+    opcao_atualizar_treino = int(input("Digite uma das opções: "))
+
+    if opcao_atualizar_treino == 1:
+        nome_treino = str(input("Digite o nome do treino que você quer remover: "))
+        nome_atualizado_treino = str(input("Digite o novo nome do treino: "))
+        lista_exercicios(nome_treino) = nome_atualizado_treino
+        print(f"O treino {nome_treino} atualizado para {nome_atualizado_treino}")
+
+    elif opcao_atualizar_treino == 2:
+        indice_treino = int(input("Digite o código do treino que você quer remover: "))
+        nome_atualizado_treino = str(input("Digite o novo nome para o treino: "))
+        lista_exercicios[indice_treino] = nome_atualizado_treino
+        print(f"Treino {lista_exercicios[indice_treino]} atualizado para {nome_atualizado_treino}")
+
+    elif opcao_atualizar_treino == 3:
+        print("Função Atualizar Treinos Encerrada!")
+
+    elif opcao_atualizar_treino == 4:
+        print("Você voltou ao menu central!")
+
+
+#FUNÇÃO REMOVER TREINOS
+def remover_treino():
+    print("Então você está decidido em remover um treino, certo? Pois bem, comece: ")
+    print("Digite o meio que usará para remover seu treino: ")
+    print("1 - Pelo Nome")
+    print("2 - Pelo Código")
+    print("3 - Encerrar Programa")
+    print("4 - Voltar ao Menu Central")
+    opcao_remover_aluno = int(input("Digite uma das opções: "))
+
+    if opcao_remover_aluno == 1:
+        nome_treino = str(input("Digite o nome do treino: "))
+        lista_exercicios.remove(nome_treino)
+        print(f"Treino {nome_treino} removido com sucesso!")
+
+    elif opcao_remover_aluno == 2:
+        indice_treino = int(input("Digite o indice do treino: "))
+        lista_exercicios.remove(indice_treino)
+        print(f"{lista_exercicios[indice_treino]} removido com sucesso!")
+
+    elif opcao_remover_aluno == 3:
+        print("Função Remover Treinos Encerrada!")
+
+    elif opcao_remover_aluno == 4:
+        print("Você voltou ao menu central!")
+
+#FUNÇÃO BUSCAR TREINOS
+def buscar_treino():
+    print("Agora, vamos buscar algum treino que você deseja: ")
+    indice_treino = int(input("Primeiramente, digite o 'código' do seu treino: "))
+    nome_treino = lista_exercicios[indice_treino]
+    print(f"O treino buscado foi: {nome_treino}")
+
+#FUNÇÃO LISTAR TREINOS
+def listar_treino():
+    for treino in lista_exercicios:
+        print(f"Seus treinos cadastrados até então são: {lista_exercicios}")
