@@ -3,13 +3,13 @@ Aqui é a página onde conterá informações gerais sobre a nossa avaliação d
 Aqui, as informações de nossa Equipe:
 TURMA: 1ºDesenvolvimento de Sistemas.
 EQUIPE: Arthur Rodrigues de Freitas - Número da Chamada: 06 / 
-        Janiely Ribeiro Freitas - Número da Chamada: 16
-        Jamile Gonçalves da Silva - Número da Chamada: 15
-        Maria de Fatima dos Santos Amâncio - Número da Chamada: 30
-        Pedro Gabriel Abreu de Lima - Número da Chamada: 38
+        Janiely Ribeiro Freitas - Número da Chamada: 16 /
+        Jamile Gonçalves da Silva - Número da Chamada: 15 /
+        Maria de Fatima dos Santos Amâncio - Número da Chamada: 30 /
+        Pedro Gabriel Abreu de Lima - Número da Chamada: 38 /
 Parte feita como instruções e responsabilidades de cada um para fins de divisão de notas:
 
-OBS: Pode ocorrer de acontecer mudanças por parte de toda a equipe - E isso não tem nenhum problema.
+OBS: Pode ocorrer de acontecer mudanças por parte de toda a equipe.
 Tema Central: Sistema de Gerenciamento de Academia
 
 Objetivo: Fazer um sistema de gerenciamento de alunos dentro de uma academia onde, o aluno, poderá cadastrar, ou seja, personalizar seus próprios treinos por sua responsabilidade e risco.
