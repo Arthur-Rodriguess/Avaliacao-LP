@@ -63,8 +63,8 @@ def remover():
         
     sleep(0.4)
     print("Digite como você quer remover o Aluno:  ")
-    print("1 - Pelo Nome")
-    print("2 - Pelo Código")
+    print("\033[1m1 - Pelo Nome")
+    print("2 - Pelo Código\033[m")
     opcao_remover_alunos = int(input("Digite: "))
     
     if opcao_remover_alunos == 1:
