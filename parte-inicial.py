@@ -12,7 +12,7 @@ system('cls')
 lista_alunos = []
 
 #FUNÇÃO MENU 1
-def menu():
+def menu_introdutorio():
     sleep(0.3)
     print("\033[1mSeja bem vindo ao nosso sistema de academia!!\033[m")
     sleep(0.3)
@@ -30,7 +30,7 @@ def menu():
         sleep(1)
         system('cls')
         cadastrar()
-        menu2()
+        menu_inicial()
         
     elif opcao == 0:
         print("programa encerrado")
@@ -136,8 +136,8 @@ def listar():
 
 #INÍCIO DA PARTE DA MARIA DE FATIMA
 
-#FUNÇÃO MENU 2
-def menu2():
+#FUNÇÃO MENU INICIAL 
+def menu_inicial():
     while True:
         print("\033[1mSISTEMA DE ACADEMIA\033[m")
         sleep(0.3)
@@ -181,13 +181,13 @@ def menu2():
             listar()
             
         elif opcao == 0:
-            print("Obrigado por utilizar o nosso programa!!")
+            print("Programa Encerrado!")
             break
             
         else:
-            print("número inválido/voltar ao menu")
+            print("Número Inválido/Voltar ao Menu!")
             
 #INICIALIZAÇÃO DO PROGRAMA
-menu()
+menu_introdutorio()
 
 #FIM DA PARTE DA MARIA DE FATIMA
