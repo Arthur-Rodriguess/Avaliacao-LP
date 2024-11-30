@@ -13,6 +13,32 @@ system('cls')
 #DECLARANDO LISTA DE ALUNOS
 lista_alunos = []
 
+def menu_introdutorio():
+    sleep(0.3)
+    print("\033[1mSeja bem vindo ao nosso sistema de academia!!\033[m")
+    sleep(0.3)
+    print("Digite uma das opções abaixo: ")
+    sleep(0.3)
+    print("\033[1m1 - CADASTRO\033[m")
+    sleep(0.3)
+    print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
+    sleep(0.3)
+    opcao = int(input("Digite sua escolha: "))
+    
+    if opcao == 1:
+        system('cls')
+        print("\033[33mCARREGANDO...\033[m")
+        sleep(1)
+        system('cls')
+        cadastrar_alunos()
+        menu_inicial()
+        
+    elif opcao == 0:
+        print("programa encerrado")
+        
+    else:
+        print("\033[31mNúmero inválido\033[m")
+            
 #FUNÇÃO MENU INICIAL
 def menu_inicial():
     while True:
