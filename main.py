@@ -91,8 +91,8 @@ def menu_inicial():
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            menu_central()
-        
+            gerenciamento_treinos()
+
         elif opcao == 6:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
@@ -107,7 +107,7 @@ def menu_inicial():
             print("número inválido/voltar ao menu")
 
 #MENU DA PARTE CENTRAL
-def menu_central():
+def gerenciamento_treinos():
     while True:
         print("SISTEMA DE ACADEMIA - GERENCIAMENTO DE TREINOS:")
         print("1 - VOLTE AO MENU INICIAL")
@@ -117,7 +117,7 @@ def menu_central():
         print("5 - BUSCAR TREINOS")
         print("6 - LISTAR TREINOS")
         print("7 - VOLTAR AO MENU INICIAL")
-        print("0 - ENCERRAR PROGRAMA")
+        print("0 - SAIR DO PROGRAMA")
         opcao = int(input("Digite sua escolha: "))
 
         if opcao == 1:
@@ -147,8 +147,8 @@ def menu_central():
             break
 
         else:
-            print("DIGITO INVÁLIDO/VOLTAR AO MENU INICIAL")
-            menu_inicial()
+            print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
+            gerenciamento_treinos()
 
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
@@ -232,13 +232,13 @@ def cronograma_treinos_academia():
         exercicios_liberacao_miofascial()
 
     elif opcao == 18:
-        print("Você voltou ao Menu Central!")
+        print("Você voltou ao Gerenciamento de Treinos!")
 
     elif opcao == 0:
         print("Programa Encerrado!")
 
     else:
-        print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
+        print("DIGITO INVÁLIDO/VOLTAR AO GERENCIAMENTO DE TREINOS")
 
 #INICIALIZAÇÃO DO PROGRAMA
 menu_introdutorio()
