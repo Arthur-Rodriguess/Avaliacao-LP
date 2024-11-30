@@ -975,8 +975,9 @@ def atualizar_treino():
     if opcao_atualizar_treino == 1:
         nome_treino = str(input("Digite o nome do treino que você quer remover: "))
         nome_atualizado_treino = str(input("Digite o novo nome do treino: "))
-        lista_exercicios(nome_treino) = nome_atualizado_treino
-        print(f"O treino {nome_treino} atualizado para {nome_atualizado_treino}")
+        codigo_exercicio = lista_exercicios(nome_treino)
+        lista_exercicios[codigo_exercicio] = nome_atualizado_treino
+        print(f"O treino {nome_treino} foi atualizado para {nome_atualizado_treino}")
 
     elif opcao_atualizar_treino == 2:
         indice_treino = int(input("Digite o código do treino que você quer remover: "))
