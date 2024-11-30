@@ -16,13 +16,13 @@ system('cls')
 lista_alunos = []
 
 #FUNÇÃO MENU 1
-def menu():
+def menu_introdutorio():
     sleep(0.3)
     print("\033[1mSeja bem vindo ao nosso sistema de academia!!\033[m")
     sleep(0.3)
     print("Digite uma das opções abaixo: ")
     sleep(0.3)
-    print("\033[1m1 - CADASTRO\033[m")
+    print("\033[1m1 - CADASTRAR ALUNOS\033[m")
     sleep(0.3)
     print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
     sleep(0.3)
@@ -34,13 +34,14 @@ def menu():
         sleep(1)
         system('cls')
         cadastrar()
-        menu2()
+        menu_inicial()
         
     elif opcao == 0:
-        print("programa encerrado")
+        print("Programa Encerrado!")
         
     else:
-        print("\033[31mNúmero inválido\033[m")
+        print("\033[31mNúmero Inválido/Voltar ao Menu Introdutório\033[m")
+        menu_introdutorio()
             
 #FIM DA PARTE DA JAMILE            
 
@@ -140,19 +141,21 @@ def listar():
 
 #INÍCIO DA PARTE DA MARIA DE FATIMA
 #FUNÇÃO MENU 2
-def menu2():
+def menu_inicial():
     while True:
         print("\033[1mSISTEMA DE ACADEMIA\033[m")
         sleep(0.3)
         print("\033[1m1 - CADASTRAR MAIS ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m2 - ATUALIZAR\033[m")
+        print("\033[1m2 - ATUALIZAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m3 - REMOVER\033[m")
+        print("\033[1m3 - REMOVER ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m4 - LISTAR\033[m")
+        print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m0 - SAIR DO PROGRAMA\033[m")
+        print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
+        sleep(0.3)
+        print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
         sleep(0.3)
         
         opcao = int(input("Digite uma das opções aqui: "))
@@ -182,7 +185,13 @@ def menu2():
             sleep(1.5)
             system('cls')
             listar()
-            
+        
+        elif opcao == 5:
+            print("\033[33mCARREGANDO...\033[m")
+            sleep(1.5)
+            system('cls')
+            cronograma_treinos_academia()
+
         elif opcao == 0:
             print("Obrigado por utilizar o nosso programa!!")
             break
@@ -191,102 +200,93 @@ def menu2():
             print("número inválido/voltar ao menu")
             
 #INICIALIZAÇÃO DO PROGRAMA
-menu()
+menu_introdutorio()
 #FIM DA PARTE DA MARIA DE FATIMA
 
 #AQUI COMEÇA A PARTE CENTRAL - RESPONSÁVEL PELO ESTUDANTE PEDRO GABRIEL ABREU DE LIMA Nº38
-
-#ESTA LINHA DE CÓDIGO FAZ COM QUE PEGUE TUDO O QUE TEM NA PÁGINA funcoes_parte_central.py E TRAGA PARA ESTA parte-central.py
-from funcoes_parte_central import *
-
-#TAMBÉM PODERIA TER SIDO USADO DESSA FORMA:
-# from funcoes_parte_central import exercicios_ombro, exercicios_peitoral, exercicios_costas, exercicios_biceps, exercicios_triceps, exercicios_trapezio, exercicios_antebraco, exercicios_quadriceps, exercicios_isquiotibiais, exercicios_gluteos, exercicios_panturrilha, exercicios_abdomen, exercicios_funcionais, exercicios_aerobios, exercicios_mobilidade, exercicios_exercicios_livres, exercicios_liberacao_miofascial
-
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
-    while True:
-        print("Seja bem vindo ao Cronograma da Academia!")
-        print("Preciso que você primeiramente digite qual membro irá trabalhar para que eu possa lhe entregar os exercícios cabíveis.")
-        print("<--Aqui são os treinos para superior:-->")
-        print("1 - Ombro")
-        print("2 - Peitoral")
-        print("3 - Costas")
-        print("4 - Bíceps")
-        print("5 - Tríceps")
-        print("6 - Trapezio")
-        print("7 - Antebraço")
+    print("Seja bem vindo ao Cronograma da Academia!")
+    print("Preciso que você primeiramente digite qual membro irá trabalhar para que eu possa lhe entregar os exercícios cabíveis.")
+    print("<--Aqui são os treinos para superior:-->")
+    print("1 - Ombro")
+    print("2 - Peitoral")
+    print("3 - Costas")
+    print("4 - Bíceps")
+    print("5 - Tríceps")
+    print("6 - Trapezio")
+    print("7 - Antebraço")
 
-        print("<--Aqui são os treinos para posterior:-->")
-        print("8 - Quadríceps")
-        print("9 - Isquiotibiais")
-        print("10 - Glúteos")
-        print("11 - Panturrilha")
+    print("<--Aqui são os treinos para posterior:-->")
+    print("8 - Quadríceps")
+    print("9 - Isquiotibiais")
+    print("10 - Glúteos")
+    print("11 - Panturrilha")
 
-        print("<--Aqui começa os exercícios por parte física e não por musculação-->")
-        print("12 - Abdomen")
-        print("13 - Funcionais")
-        print("14 - Aerobios")
-        print("15 - Mobilidade")
-        print("16 - Exercícios livres")
-        print("17 - Liberação miofascial")
-        opcao = int(input("Digite: "))
+    print("<--Aqui começa os exercícios por parte física e não por musculação-->")
+    print("12 - Abdomen")
+    print("13 - Funcionais")
+    print("14 - Aerobios")
+    print("15 - Mobilidade")
+    print("16 - Exercícios livres")
+    print("17 - Liberação miofascial")
+    print("0 - Encerrar Programa")
+    opcao = int(input("Digite: "))
 
-        if opcao == 1:
-            exercicios_ombro()
-        elif opcao == 2:
-            exercicios_peitoral()
-        elif opcao == 3:
-            exercicios_costas()
-        elif opcao == 4:
-            exercicios_biceps()
-        elif opcao == 5:
-            exercicios_triceps()
-        elif opcao == 6:
-            exercicios_trapezio()
-        elif opcao == 7:
-            exercicios_antebraco()
-        elif opcao == 8:
-            exercicios_quadriceps()
-        elif opcao == 9:
-            exercicios_isquiotibiais()
-        elif opcao == 10:
-            exercicios_gluteos()
-        elif opcao == 11:
-            exercicios_panturrilha()
-        elif opcao == 12:
-            exercicios_abdomen()
-        elif opcao == 13:
-            exercicios_funcionais()
-        elif opcao == 14:
-            exercicios_aerobios()
-        elif opcao == 15:
-            exercicios_mobilidade()
-        elif opcao == 16:
-            exercicios_exercicios_livres()
-        elif opcao == 17:
-            exercicios_liberacao_miofascial()
-        else:
-            print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
-
-#INICIALIZAÇÃO DO PROGRAMA DE CRONOGRAMA COM A FUNÇÃO DE CRONOGRAMA DE TREINOS
-cronograma_treinos_academia()
-
-#COLOCANDO MENU NA PARTE CENTRAL
+    if opcao == 1:
+        exercicios_ombro()
+    elif opcao == 2:
+        exercicios_peitoral()
+    elif opcao == 3:
+        exercicios_costas()
+    elif opcao == 4:
+        exercicios_biceps()
+    elif opcao == 5:
+        exercicios_triceps()
+    elif opcao == 6:
+        exercicios_trapezio()
+    elif opcao == 7:
+        exercicios_antebraco()
+    elif opcao == 8:
+        exercicios_quadriceps()
+    elif opcao == 9:
+        exercicios_isquiotibiais()
+    elif opcao == 10:
+        exercicios_gluteos()
+    elif opcao == 11:
+        exercicios_panturrilha()
+    elif opcao == 12:
+        exercicios_abdomen()
+    elif opcao == 13:
+        exercicios_funcionais()
+    elif opcao == 14:
+        exercicios_aerobios()
+    elif opcao == 15:
+        exercicios_mobilidade()
+    elif opcao == 16:
+        exercicios_exercicios_livres()
+    elif opcao == 17:
+        exercicios_liberacao_miofascial()
+    elif opcao == 0:
+        print("Programa Encerrado!")
+    else:
+        print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
 
 #MENU DA PARTE CENTRAL
 def menu_parte_central():
     while True:
         print("Navegue pelos seus treinos e muito mais:")
-        print("1 - Volte ao Menu Inicial")
-        print("2 - Cadastrar mais Treinos")
-        print("3 - Atualizar Treinos")
-        print("4 - Remover Treinos")
-        print("5 - Buscar Treino")
-        print("6 - Listar Treinos")
+        print("1 - VOLTE AO MENU INICIAL")
+        print("2 - CADASTRAR MAIS TREINOS")
+        print("3 - ATUALIZAR TREINOS")
+        print("4 - REMOVER TREINOS")
+        print("5 - BUSCAR TREINOS")
+        print("6 - LISTAR TREINOS")
+        print("0 - ENCERRAR PROGRAMA")
         opcao = int(input("Digite sua escolha: "))
 
-        # if opcao == 1:
-            # menu()
+        if opcao == 1:
+            menu_inicial()
         if opcao == 2:
             cronograma_treinos_academia()
         elif opcao == 3:
@@ -297,5 +297,8 @@ def menu_parte_central():
             buscar_treino()
         elif opcao == 6:
             listar_treino()
+        elif opcao == 0:
+            print("Programa Encerrado!")
+            break
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU")
