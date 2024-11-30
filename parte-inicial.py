@@ -51,7 +51,7 @@ def cadastrar_alunos():
         lista_alunos.append(adicionar_aluno)
         system('cls')
         print(f"\033[32mAluno(a) \033[1m{adicionar_aluno}\033[m\033[32m cadastrado com sucesso!!\033[m")
-        sleep(1.5)
+        sleep(1)
         system('cls')
         
 #FUNÇÃO REMOVER ALUNOS
@@ -64,9 +64,9 @@ def remover_alunos():
     sleep(0.4)
     print("Digite como você quer remover o Aluno:  ")
     print("\033[1m1 - Pelo Nome")
-    print("2 - Pelo Código\033[m")
+    print("2 - Pelo Código")
     print("3 - Voltar ao Menu Inicial")
-    print("4 - Sair do Programa")
+    print("4 - Sair do Programa\033[m")
     opcao_remover_alunos = int(input("Digite: "))
     
     if opcao_remover_alunos == 1:
@@ -180,25 +180,25 @@ def menu_inicial():
         
         if opcao == 1:
             print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
+            sleep(1)
             system('cls')
             cadastrar_alunos()
             
         elif opcao == 2:
             print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
+            sleep(1)
             system('cls')
             atualizar_alunos()
             
         elif opcao == 3:
             print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
+            sleep(1)
             system('cls')
             remover_alunos()
             
         elif opcao == 4:
             print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
+            sleep(1)
             system('cls')
             listar_alunos()
             

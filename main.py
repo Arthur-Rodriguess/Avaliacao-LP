@@ -156,9 +156,7 @@ def menu_inicial():
         sleep(0.3)
         print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m5 - IR PARA O GERENCIAMENTO DE TREINOS\033[m")
-        sleep(0.3)
-        print("\033[1m6 - ADICIONAR TREINOS DO ALUNO\033[m")
+        print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
         sleep(0.3)
         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
         sleep(0.3)
@@ -195,12 +193,6 @@ def menu_inicial():
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            menu_central()
-        
-        elif opcao == 6:
-            print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
-            system('cls')
             cronograma_treinos_academia()
 
         elif opcao == 0:
@@ -214,48 +206,63 @@ def menu_inicial():
 menu_introdutorio()
 
 #MENU DA PARTE CENTRAL
-def menu_central():
-    while True:
-        print("SISTEMA DE ACADEMIA - GERENCIAMENTO DE TREINOS:")
-        print("1 - VOLTE AO MENU INICIAL")
-        print("2 - CADASTRAR MAIS TREINOS")
-        print("3 - ATUALIZAR TREINOS")
-        print("4 - REMOVER TREINOS")
-        print("5 - BUSCAR TREINOS")
-        print("6 - LISTAR TREINOS")
-        print("7 - VOLTAR AO MENU INICIAL")
-        print("0 - ENCERRAR PROGRAMA")
-        opcao = int(input("Digite sua escolha: "))
-
-        if opcao == 1:
-            menu_inicial()
-
-        if opcao == 2:
-            cronograma_treinos_academia()
+# def menu_inicial():
+#     while True:
+#         print("\033[1mSISTEMA DE ACADEMIA\033[m")
+#         sleep(0.3)
+#         print("\033[1m1 - CADASTRAR MAIS ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m2 - ATUALIZAR ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m3 - REMOVER ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m4 - LISTAR ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
+#         sleep(0.3)
+#         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
+#         sleep(0.3)
+        
+#         opcao = int(input("Digite uma das opções aqui: "))
+#         sleep(0.3)
+#         system('cls')
+        
+#         if opcao == 1:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             cadastrar()
             
-        elif opcao == 3:
-            atualizar_treino()
+#         elif opcao == 2:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             atualizar()
+            
+#         elif opcao == 3:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             remover()
+            
+#         elif opcao == 4:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             listar()
+        
+#         elif opcao == 5:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             cronograma_treinos_academia()
 
-        elif opcao == 4:
-            remover_treino()
-
-        elif opcao == 5:
-            buscar_treino()
-
-        elif opcao == 6:
-            listar_treino()
-
-        elif opcao == 7:
-            print("Você voltou ao Menu Inicial!")
-            menu_inicial()
-
-        elif opcao == 0:
-            print("Programa Encerrado!")
-            break
-
-        else:
-            print("DIGITO INVÁLIDO/VOLTAR AO MENU INICIAL")
-            menu_inicial()
+#         elif opcao == 0:
+#             print("Obrigado por utilizar o nosso programa!!")
+#             break
+            
+#         else:
+#             print("número inválido/voltar ao menu")
 
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():

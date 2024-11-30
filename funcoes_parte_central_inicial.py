@@ -1228,7 +1228,7 @@ def listar_alunos():
 #FUNÇÃO MENU INICIAL 
 def menu_inicial():
     while True:
-        print("\033[1mSISTEMA DE ACADEMIA\033[m")
+        print("\033[1mSISTEMA DE ACADEMIA - GERENCIAMENTO DE ALUNOS\033[m")
         sleep(0.3)
         print("\033[1m1 - CADASTRAR MAIS ALUNOS\033[m")
         sleep(0.3)
@@ -1238,7 +1238,9 @@ def menu_inicial():
         sleep(0.3)
         print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m0 - SAIR DO PROGRAMA\033[m")
+        print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
+        sleep(0.3)
+        print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
         sleep(0.3)
         
         opcao = int(input("Digite uma das opções aqui: "))
@@ -1268,14 +1270,19 @@ def menu_inicial():
             sleep(1.5)
             system('cls')
             listar_alunos()
-            
+        
+        elif opcao == 5:
+            print("\033[33mCARREGANDO...\033[m")
+            sleep(1.5)
+            system('cls')
+            cronograma_treinos_academia()
+
         elif opcao == 0:
             print("Obrigado por utilizar o nosso programa!!")
             break
             
         else:
             print("número inválido/voltar ao menu")
-            
 #INICIALIZAÇÃO DO PROGRAMA
 menu_introdutorio()
 
