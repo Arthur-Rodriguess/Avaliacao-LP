@@ -9,6 +9,8 @@ from time import sleep
 #FUNÇÃO DA LISTA DE EXERCÍCIOS DO PRÓPRIO ALUNO
 lista_exercicios = []
 
+#FUNÇÕES DA PÁGINA CENTRAL
+
 #FUNÇÕES DOS EXERCÍCIOS
 #FUNÇÃO DOS EXERCÍCIOS PARA SUPERIOR:
 
@@ -1058,57 +1060,6 @@ def cronograma_treinos_academia():
 
 #FUNÇÕES DO MENU DA PARTE CENTRAL
 
-#MENU DA PARTE INICIAL - SOMENTE PARA RODAR O MENU DA PARTE CENTRAL AQUI EM BAIXO
-def menu_inicial():
-    while True:
-        print("\033[1mSISTEMA DE ACADEMIA\033[m")
-        sleep(0.3)
-        print("\033[1m1 - CADASTRAR MAIS ALUNOS\033[m")
-        sleep(0.3)
-        print("\033[1m2 - ATUALIZAR\033[m")
-        sleep(0.3)
-        print("\033[1m3 - REMOVER\033[m")
-        sleep(0.3)
-        print("\033[1m4 - LISTAR\033[m")
-        sleep(0.3)
-        print("\033[1m0 - SAIR DO PROGRAMA\033[m")
-        sleep(0.3)
-        
-        opcao = int(input("Digite uma das opções aqui: "))
-        sleep(0.3)
-        system('cls')
-        
-        if opcao == 1:
-            print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
-            system('cls')
-            cadastrar_alunos()
-            
-        elif opcao == 2:
-            print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
-            system('cls')
-            atualizar_alunos()
-            
-        elif opcao == 3:
-            print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
-            system('cls')
-            remover_alunos()
-            
-        elif opcao == 4:
-            print("\033[33mCARREGANDO...\033[m")
-            sleep(1.5)
-            system('cls')
-            listar_alunos()
-            
-        elif opcao == 0:
-            print("Programa Encerrado!")
-            break
-            
-        else:
-            print("Número Inválido/Voltar ao Menu!")
-            
 #MENU DA PARTE CENTRAL
 def gerenciamento_treinos():
     while True:

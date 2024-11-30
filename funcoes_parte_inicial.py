@@ -10,12 +10,14 @@ from time import sleep
 
 system('cls')
 
+#PARTE DA PÁGINA INICIAL
+
 #INÍCIO DA PARTE DA JAMILE
 
 #DECLARANDO LISTA DE ALUNOS
 lista_alunos = []
 
-#FUNÇÃO MENU 1
+#FUNÇÃO MENU INTRODUTÓRIO
 def menu_introdutorio():
     sleep(0.3)
     print("\033[1mSeja bem vindo ao nosso sistema de academia!!\033[m")
