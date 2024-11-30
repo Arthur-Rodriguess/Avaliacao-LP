@@ -35,7 +35,7 @@ def menu_introdutorio():
         print("\033[33mCARREGANDO...\033[m")
         sleep(1)
         system('cls')
-        cadastrar()
+        cadastrar_alunos()
         menu_inicial()
         
     elif opcao == 0:
@@ -49,7 +49,7 @@ def menu_introdutorio():
 
 #INÍCIO DA PARTE DA JANIELY
 #FUNÇÃO CADASTRAR ALUNOS
-def cadastrar():
+def cadastrar_alunos():
     qtd_alunos = int(input("Digite a quantidade de alunos que você quer cadastrar: "))
     system('cls')
     
@@ -62,7 +62,7 @@ def cadastrar():
         system('cls')
         
 #FUNÇÃO REMOVER ALUNOS
-def remover():
+def remover_alunos():
     print("\033[1mAlunos cadastrados:\033[m")
     for indice, aluno in enumerate(lista_alunos):
         sleep(0.5)
@@ -107,7 +107,7 @@ def remover():
         print("Digito Inválido/Voltar ao Menu Inicial!")   
 
 #FUNÇÃO ATUALIZAR ALUNOS            
-def atualizar():
+def atualizar_alunos():
     print("\033[1mAlunos cadastrados:\033[m")
     for indice, aluno in enumerate(lista_alunos):
         sleep(0.5)
@@ -157,7 +157,7 @@ def atualizar():
         print("Digito Inválido/Voltar ao Menu Inicial")
 
 #FUNÇÃO LISTAR ALUNOS        
-def listar():
+def listar_alunos():
     for indice, aluno in enumerate(lista_alunos):
         print(f"Código do Aluno(a): {indice} Aluno(a): {aluno} ")
         
@@ -177,7 +177,9 @@ def menu_inicial():
         sleep(0.3)
         print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
+        print("\033[1m5 - GERENCIAR TREINOS\033[m")
+        sleep(0.3)
+        print("\033[1m6 - ADICIONAR TREINOS\033[m")
         sleep(0.3)
         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
         sleep(0.3)
@@ -190,25 +192,25 @@ def menu_inicial():
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            cadastrar()
+            cadastrar_alunos()
             
         elif opcao == 2:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            atualizar()
+            atualizar_alunos()
             
         elif opcao == 3:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            remover()
+            remover_alunos()
             
         elif opcao == 4:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            listar()
+            listar_alunos()
         
         elif opcao == 5:
             print("\033[33mCARREGANDO...\033[m")

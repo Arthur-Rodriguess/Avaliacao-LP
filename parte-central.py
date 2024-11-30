@@ -10,6 +10,7 @@ from funcoes_parte_central_inicial import *
 #TAMBÉM PODERIA TER SIDO USADO DESSA FORMA:
 # from funcoes_parte_central import exercicios_ombro, exercicios_peitoral, exercicios_costas, exercicios_biceps, exercicios_triceps, exercicios_trapezio, exercicios_antebraco, exercicios_quadriceps, exercicios_isquiotibiais, exercicios_gluteos, exercicios_panturrilha, exercicios_abdomen, exercicios_funcionais, exercicios_aerobios, exercicios_mobilidade, exercicios_exercicios_livres, exercicios_liberacao_miofascial
 
+<<<<<<< HEAD
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
     print("Seja bem vindo ao Cronograma da Academia!")
@@ -82,6 +83,8 @@ def cronograma_treinos_academia():
 #INICIALIZAÇÃO DO PROGRAMA DE CRONOGRAMA COM A FUNÇÃO DE CRONOGRAMA DE TREINOS
 cronograma_treinos_academia()
 
+=======
+>>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
 #COLOCANDO MENU NA PARTE CENTRAL
 
 #MENU DA PARTE CENTRAL
@@ -94,11 +97,11 @@ def menu_central():
         print("4 - Remover Treinos")
         print("5 - Buscar Treino")
         print("6 - Listar Treinos")
-        print("7 - Voltar ao Menu Inicial")
         print("0 - Encerrar Programa")
         opcao = int(input("Digite sua escolha: "))
 
         if opcao == 1:
+            print("Você voltou ao Menu Inicial!")
             menu_inicial()
 
         if opcao == 2:
@@ -115,10 +118,6 @@ def menu_central():
 
         elif opcao == 6:
             listar_treino()
-
-        elif opcao == 7:
-            print("Você voltou ao Menu Inicial!")
-            menu_inicial()
 
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU")
@@ -209,7 +208,10 @@ def cronograma_treinos_academia():
 
     elif opcao == 18:
         print("Você voltou ao Menu Central!")
-
+    
+    elif opcao == 0:
+        print("Programa Encerrado!")
+        
     else:
         print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
 
