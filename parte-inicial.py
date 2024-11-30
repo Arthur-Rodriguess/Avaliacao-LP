@@ -29,7 +29,7 @@ def menu_introdutorio():
         print("\033[33mCARREGANDO...\033[m")
         sleep(1)
         system('cls')
-        cadastrar()
+        cadastrar_alunos()
         menu_inicial()
         
     elif opcao == 0:
@@ -42,7 +42,7 @@ def menu_introdutorio():
 
 #INÍCIO DA PARTE DA JANIELY
 #FUNÇÃO CADASTRAR ALUNOS
-def cadastrar():
+def cadastrar_alunos():
     qtd_alunos = int(input("Digite a quantidade de alunos que você quer cadastrar: "))
     system('cls')
     
@@ -55,7 +55,7 @@ def cadastrar():
         system('cls')
         
 #FUNÇÃO REMOVER ALUNOS
-def remover():
+def remover_alunos():
     print("\033[1mAlunos cadastrados:\033[m")
     for indice, aluno in enumerate(lista_alunos):
         sleep(0.5)
@@ -65,6 +65,8 @@ def remover():
     print("Digite como você quer remover o Aluno:  ")
     print("\033[1m1 - Pelo Nome")
     print("2 - Pelo Código\033[m")
+    print("3 - Voltar ao Menu Inicial")
+    print("4 - Sair do Programa")
     opcao_remover_alunos = int(input("Digite: "))
     
     if opcao_remover_alunos == 1:
@@ -79,7 +81,7 @@ def remover():
             system('cls')
             print(f"\033[32mAluno \033[1m{remover_aluno}\033[m\033[32m removido com sucesso!!\033[m")
             
-    if opcao_remover_alunos == 2:
+    elif opcao_remover_alunos == 2:
         qtd_alunos_remover = int(input("Digite a quantidade de Alunos que você quer remover: "))
         
         for alunos_remover in range(0, qtd_alunos_remover):
@@ -87,9 +89,18 @@ def remover():
             nome_aluno = lista_alunos[indice_aluno]
             lista_alunos.remove(nome_aluno)
             print(f"Aluno \033[1m{nome_aluno}\033[m removido com sucesso!!")
-            
+
+    elif opcao_remover_alunos == 3:
+        print("Você voltou ao Menu Inicial!")
+
+    elif opcao_remover_alunos == 4:
+        print("Programa Encerrado!")
+
+    else:
+        print("Digito Inválido/Voltar ao Menu Inicial!") 
+
 #FUNÇÃO ATUALIZAR ALUNOS            
-def atualizar():
+def atualizar_alunos():
     print("\033[1mAlunos cadastrados:\033[m")
     for indice, aluno in enumerate(lista_alunos):
         sleep(0.5)
@@ -99,6 +110,8 @@ def atualizar():
     print("Digite como você quer atualizar o aluno: ")       
     print("1 - Pelo Nome")
     print("2 - Pelo Código")
+    print("3 - Voltar ao Menu Inicial")
+    print("4 - Sair do Programa")
     opcao_atualizar_aluno = int(input("Digite: "))
     
     if opcao_atualizar_aluno == 1:
@@ -114,7 +127,7 @@ def atualizar():
                     print(f"\033[32mAluno(a) \033[1m{atualizar_aluno}\033[m\033[32m atualizado com sucesso!!\033[m")
                     break
                     
-    if opcao_atualizar_aluno == 2:
+    elif opcao_atualizar_aluno == 2:
         qtd_alunos_atualizar = int(input("Digite a quantidade de alunos que você quer atualizar: "))
         
         for alunos_atualizar in range(0, qtd_alunos_atualizar):
@@ -126,9 +139,18 @@ def atualizar():
                 if indice == buscar_aluno:
                     lista_alunos[indice] = nome_atualizado_aluno
                     print(f"Aluno(a) \033[1m{nome_desatualizado_aluno}\033[m Atualizado para \033[1m{nome_atualizado_aluno}\033[m")
-                    
+    
+    elif opcao_atualizar_aluno  == 3:
+        print("Você voltou ao Menu Inicial!")
+    
+    elif opcao_atualizar_aluno == 4:
+        print("Programa Encerrado!")
+    
+    else:
+        print("Digito Inválido/Voltar ao Menu Inicial!")
+
 #FUNÇÃO LISTAR ALUNOS        
-def listar():
+def listar_alunos():
     for indice, aluno in enumerate(lista_alunos):
         print(f"Código do Aluno(a): \033[1m{indice}\033[m Aluno(a): \033[1m{aluno}\033[m ")
         
@@ -160,25 +182,25 @@ def menu_inicial():
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            cadastrar()
+            cadastrar_alunos()
             
         elif opcao == 2:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            atualizar()
+            atualizar_alunos()
             
         elif opcao == 3:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            remover()
+            remover_alunos()
             
         elif opcao == 4:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
-            listar()
+            listar_alunos()
             
         elif opcao == 0:
             print("Programa Encerrado!")

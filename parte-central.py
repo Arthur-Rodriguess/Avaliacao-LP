@@ -22,21 +22,32 @@ def menu_central():
         print("4 - Remover Treinos")
         print("5 - Buscar Treino")
         print("6 - Listar Treinos")
+        print("7 - Voltar ao Menu Inicial")
         print("0 - Encerrar Programa")
         opcao = int(input("Digite sua escolha: "))
 
         if opcao == 1:
             menu_inicial()
+
         if opcao == 2:
             cronograma_treinos_academia()
+
         elif opcao == 3:
             atualizar_treino()
+
         elif opcao == 4:
             remover_treino()
+
         elif opcao == 5:
             buscar_treino()
+
         elif opcao == 6:
             listar_treino()
+
+        elif opcao == 7:
+            print("Você voltou ao Menu Inicial!")
+            menu_inicial()
+
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU")
 
@@ -72,45 +83,64 @@ def cronograma_treinos_academia():
 
     if opcao == 1:
         exercicios_ombro()
+
     elif opcao == 2:
         exercicios_peitoral()
+
     elif opcao == 3:
         exercicios_costas()
+
     elif opcao == 4:
         exercicios_biceps()
+
     elif opcao == 5:
         exercicios_triceps()
+
     elif opcao == 6:
         exercicios_trapezio()
+
     elif opcao == 7:
         exercicios_antebraco()
+
     elif opcao == 8:
         exercicios_quadriceps()
+
     elif opcao == 9:
         exercicios_isquiotibiais()
+
     elif opcao == 10:
         exercicios_gluteos()
+
     elif opcao == 11:
         exercicios_panturrilha()
+
     elif opcao == 12:
         exercicios_abdomen()
+
     elif opcao == 13:
         exercicios_funcionais()
+
     elif opcao == 14:
         exercicios_aerobios()
+
     elif opcao == 15:
         exercicios_mobilidade()
+
     elif opcao == 16:
         exercicios_exercicios_livres()
+
     elif opcao == 17:
         exercicios_liberacao_miofascial()
+        
     elif opcao == 0:
         print("Programa Encerrado!")
+
     elif opcao == 18:
         print("Você voltou ao Menu Central!")
+
     else:
         print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
 
-#INICIALIZAÇÃO DO PROGRAMA DE CRONOGRAMA COM A FUNÇÃO DE CRONOGRAMA DE TREINOS
+#INICIALIZAÇÃO DO PROGRAMA DE CRONOGRAMA DE TREINOS COM A FUNÇÃO menu_central
 menu_central()
 
