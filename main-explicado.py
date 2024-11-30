@@ -1,19 +1,23 @@
-#NESTA PARTE, VOCÊ ENCONTRARÁ A PARTE DE TODO MUNDO EM UM SÓ LUGAR!
+#NESTA PARTE, VOCÊ ENCONTRARÁ A PARTE DE TODOS EM UM SÓ LUGAR!
 
-#AQUI COMEÇA A PARTE GERAL (MODIFICAÇÕES EM TODO O CÓDIGO MAIS OUTRAS 'DECORAÇÕES')
+#AQUI COMEÇA A PARTE GERAL (MODIFICAÇÕES EM TODO O CÓDIGO MAIS OUTRAS 'DECORAÇÕES') - RESPONSÁVEL PELO ESTUDANTE ARTHUR RODRIGUES DE FREITAS Nº06
 from os import system
 from time import sleep
+#FEITO TAMBÉM ALGUMAS MODIFICAÇÕES NO CÓDIGO GERAL
+#FIM DA PARTE DO ARTHUR
 
 #PARTE DA MODULARIZAÇÃO (PEGANDO FUNÇÕES DA funcoes_parte_central.py E TRAZENDO PARA ESSA, main.py)
 from funcoes_parte_central_inicial import *
 #TÉRMINO DA PARTE DA MODULARIZAÇÃO
 
+#AQUI COMEÇA A PARTE CENTRAL - RESPONSÁVEL PELOS ESTUDANTES JAMILE GONÇALVES, JANIELY RIBEIRO, MARIA DE FATIMA Nº15, 16, 30
 system('cls')
 
+#INÍCIO DA PARTE DA JAMILE
 #DECLARANDO LISTA DE ALUNOS
 lista_alunos = []
 
-#FUNÇÃO MENU INTRODUTÓRIO
+#FUNÇÃO MENU 1
 def menu_introdutorio():
     sleep(0.3)
     print("\033[1mSeja bem vindo ao nosso sistema de academia!!\033[m")
@@ -41,6 +45,9 @@ def menu_introdutorio():
         print("\033[31mNúmero Inválido/Voltar ao Menu Introdutório\033[m")
         menu_introdutorio()
             
+#FIM DA PARTE DA JAMILE            
+
+#INÍCIO DA PARTE DA JANIELY
 #FUNÇÃO CADASTRAR ALUNOS
 def cadastrar():
     qtd_alunos = int(input("Digite a quantidade de alunos que você quer cadastrar: "))
@@ -132,7 +139,10 @@ def listar():
     for indice, aluno in enumerate(lista_alunos):
         print(f"Código do Aluno(a): {indice} Aluno(a): {aluno} ")
         
-#FUNÇÃO MENU INICIAL
+#FIM DA PARTE DA JANIELY  
+
+#INÍCIO DA PARTE DA MARIA DE FATIMA
+#FUNÇÃO MENU 2
 def menu_inicial():
     while True:
         print("\033[1mSISTEMA DE ACADEMIA\033[m")
@@ -193,7 +203,9 @@ def menu_inicial():
             
 #INICIALIZAÇÃO DO PROGRAMA
 menu_introdutorio()
+#FIM DA PARTE DA MARIA DE FATIMA
 
+#AQUI COMEÇA A PARTE CENTRAL - RESPONSÁVEL PELO ESTUDANTE PEDRO GABRIEL ABREU DE LIMA Nº38
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
     print("Seja bem vindo ao Cronograma da Academia!")
