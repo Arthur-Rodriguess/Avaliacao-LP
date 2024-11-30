@@ -72,6 +72,8 @@ def remover():
     print("Digite como você quer remover o Aluno:  ")
     print("1 - Pelo Nome")
     print("2 - Pelo Código")
+    print("3 - Voltar ao Menu Inicial")
+    print("4 - Sair do Programa")
     opcao_remover_alunos = int(input("Digite: "))
     
     if opcao_remover_alunos == 1:
@@ -86,7 +88,7 @@ def remover():
             system('cls')
             print(f"Aluno {remover_aluno} removido com sucesso!!")
             
-    if opcao_remover_alunos == 2:
+    elif opcao_remover_alunos == 2:
         qtd_alunos_remover = int(input("Digite a quantidade de Alunos que você quer remover: "))
         
         for alunos_remover in range(0, qtd_alunos_remover):
@@ -94,7 +96,16 @@ def remover():
             nome_aluno = lista_alunos[indice_aluno]
             lista_alunos.remove(nome_aluno)
             print(f"Aluno {nome_aluno} removido com sucesso!!")
-            
+
+    elif opcao_remover_alunos == 3:
+        print("Você voltou ao Menu Inicial!")
+
+    elif opcao_remover_alunos == 4:
+        print("Programa Encerrado!")
+
+    else:
+        print("Digito Inválido/Voltar ao Menu Inicial!")   
+
 #FUNÇÃO ATUALIZAR ALUNOS            
 def atualizar():
     print("\033[1mAlunos cadastrados:\033[m")
@@ -106,6 +117,8 @@ def atualizar():
     print("Digite como você quer remover o aluno: ")       
     print("1 - Pelo Nome")
     print("2 - Pelo Código")
+    print("3 - Voltar ao Menu Inicial")
+    print("4 - Sair do Programa")
     opcao_atualizar_aluno = int(input("Digite: "))
     
     if opcao_atualizar_aluno == 1:
@@ -120,20 +133,29 @@ def atualizar():
                     lista_alunos[indice] = atualizar_aluno
                     print(f"\033[32mAluno(a) {atualizar_aluno} atualizado com sucesso!!\033[m")
                     break
-                    
-    if opcao_atualizar_aluno == 2:
+
+    elif opcao_atualizar_aluno == 2:
         qtd_alunos_atualizar = int(input("Digite a quantidade de alunos que você quer atualizar: "))
         
         for alunos_atualizar in range(0, qtd_alunos_atualizar):
             buscar_aluno = int(input("Digite o código do(a) aluno(a) para atualizar: "))
             nome_desatualizado_aluno = lista_alunos[buscar_aluno]
-            
             nome_atualizado_aluno = str(input("Digite o nome do novo aluno(a): "))
+
             for indice, aluno in enumerate(lista_alunos):
                 if indice == buscar_aluno:
                     lista_alunos[indice] = nome_atualizado_aluno
                     print(f"Aluno(a) {nome_desatualizado_aluno} Atualizado para {nome_atualizado_aluno}")
-                    
+
+    elif opcao_atualizar_aluno == 3:
+        print("Você voltou ao Menu Inicial!")   
+
+    elif opcao_atualizar_aluno == 4:
+        print("Programa Encerrado!")
+
+    else:
+        print("Digito Inválido/Voltar ao Menu Inicial")
+
 #FUNÇÃO LISTAR ALUNOS        
 def listar():
     for indice, aluno in enumerate(lista_alunos):
@@ -238,42 +260,61 @@ def cronograma_treinos_academia():
 
     if opcao == 1:
         exercicios_ombro()
+
     elif opcao == 2:
         exercicios_peitoral()
+
     elif opcao == 3:
         exercicios_costas()
+
     elif opcao == 4:
         exercicios_biceps()
+
     elif opcao == 5:
         exercicios_triceps()
+
     elif opcao == 6:
         exercicios_trapezio()
+
     elif opcao == 7:
         exercicios_antebraco()
+
     elif opcao == 8:
         exercicios_quadriceps()
+
     elif opcao == 9:
         exercicios_isquiotibiais()
+
     elif opcao == 10:
         exercicios_gluteos()
+
     elif opcao == 11:
         exercicios_panturrilha()
+
     elif opcao == 12:
         exercicios_abdomen()
+
     elif opcao == 13:
         exercicios_funcionais()
+
     elif opcao == 14:
         exercicios_aerobios()
+
     elif opcao == 15:
         exercicios_mobilidade()
+
     elif opcao == 16:
         exercicios_exercicios_livres()
+
     elif opcao == 17:
         exercicios_liberacao_miofascial()
+
     elif opcao == 18:
         print("Você voltou ao Menu Central!")
+
     elif opcao == 0:
         print("Programa Encerrado!")
+
     else:
         print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
 
@@ -293,22 +334,30 @@ def menu_central():
 
         if opcao == 1:
             menu_inicial()
+
         if opcao == 2:
             cronograma_treinos_academia()
+
         elif opcao == 3:
             atualizar_treino()
+
         elif opcao == 4:
             remover_treino()
+
         elif opcao == 5:
             buscar_treino()
+
         elif opcao == 6:
             listar_treino()
+
         elif opcao == 7:
             print("Você voltou ao Menu Inicial!")
             menu_inicial()
+
         elif opcao == 0:
             print("Programa Encerrado!")
             break
+
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU INICIAL")
             menu_inicial()
