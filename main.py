@@ -5,7 +5,8 @@ from os import system
 from time import sleep
 
 #PARTE DA MODULARIZAÇÃO (PEGANDO FUNÇÕES DA funcoes_parte_central.py E TRAZENDO PARA ESSA, main.py)
-from funcoes_parte_central_inicial import *
+from funcoes_parte_central import *
+from funcoes_parte_inicial import *
 #TÉRMINO DA PARTE DA MODULARIZAÇÃO
 
 system('cls')
@@ -37,7 +38,7 @@ def menu_introdutorio():
         print("programa encerrado")
         
     else:
-        print("\033[31mNúmero inválido\033[m")
+        print("\033[31mNúmero Inválido/Programa Encerrado!\033[m")
             
 #FUNÇÃO MENU INICIAL
 def menu_inicial():
