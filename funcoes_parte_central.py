@@ -1,7 +1,15 @@
 #AQUI COMEÇA A PARTE CENTRAL - RESPONSÁVEL PELO ESTUDANTE PEDRO GABRIEL ABREU DE LIMA Nº38
 
+#INÍCIO DA PARTE DO ARTHUR
+from os import system
+from time import sleep
+#FEITO TAMBÉM ALGUMAS MODIFICAÇÕES NO CÓDIGO GERAL
+#FIM DA PARTE DO ARTHUR
+
 #FUNÇÃO DA LISTA DE EXERCÍCIOS DO PRÓPRIO ALUNO
 lista_exercicios = []
+
+#FUNÇÕES DA PÁGINA CENTRAL
 
 #FUNÇÕES DOS EXERCÍCIOS
 #FUNÇÃO DOS EXERCÍCIOS PARA SUPERIOR:
@@ -1192,6 +1200,7 @@ def buscar_treino():
 def listar_treino():
     for treino in lista_exercicios:
         print(f"Seus treinos cadastrados até então são: {lista_exercicios}")
+<<<<<<< HEAD:funcoes_parte_central_inicial.py
 
 #AQUI, AS FUNÇÕES DA PARTE INICIAL
 #AQUI COMEÇA A PARTE INICIAL - RESPONSÁVEL PELOS ESTUDANTES JAMILE GONÇALVES, JANIELY RIBEIRO E MARIA DE FATIMA
@@ -1434,3 +1443,5 @@ def menu_inicial():
 menu_introdutorio()
 
 #FIM DA PARTE DA MARIA DE FATIMA
+=======
+>>>>>>> 7a95afc15bc51bc8cbca99c87188d83173ad56a6:funcoes_parte_central.py
