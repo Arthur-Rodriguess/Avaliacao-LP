@@ -18,7 +18,7 @@ def menu_introdutorio():
     sleep(0.3)
     print("Digite uma das opções abaixo: ")
     sleep(0.3)
-    print("\033[1m1 - CADASTRO\033[m")
+    print("\033[1m1 - CADASTRAR ALUNO\033[m")
     sleep(0.3)
     print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
     sleep(0.3)

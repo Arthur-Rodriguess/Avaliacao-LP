@@ -56,7 +56,7 @@ def cadastrar_alunos():
     system('cls')
     
     for aluno in range(qtd_alunos):
-        adicionar_aluno = input("\033[1mDigite o nome do Aluno(a):\033[m ")
+        adicionar_aluno = str(input("\033[1mDigite o nome do Aluno(a):\033[m "))
         lista_alunos.append(adicionar_aluno)
         system('cls')
         print(f"\033[32mAluno(a) \033[1m{adicionar_aluno}\033[m\033[32m cadastrado com sucesso!!\033[m")
