@@ -8,6 +8,9 @@ from time import sleep
 #FEITO TAMBÉM ALGUMAS MODIFICAÇÕES NO CÓDIGO GERAL
 #FIM DA PARTE DO ARTHUR
 
+#APENAS IMPORTANDO FUNÇÕES DA PÁGINA funcoes_parte_inicial.py PARA QUE NÃO DER PROBLEMA NA HORA DE RODAR O PROGRAMA DESTA PÁGINA
+from funcoes_parte_central import cronograma_treinos_academia, gerenciamento_treinos
+
 system('cls')
 
 #PARTE DA PÁGINA INICIAL

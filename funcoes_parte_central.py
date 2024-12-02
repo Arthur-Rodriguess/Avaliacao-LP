@@ -1200,7 +1200,6 @@ def buscar_treino():
 def listar_treino():
     for treino in lista_exercicios:
         print(f"Seus treinos cadastrados até então são: {lista_exercicios}")
-<<<<<<< HEAD:funcoes_parte_central_inicial.py
 
 #AQUI, AS FUNÇÕES DA PARTE INICIAL
 #AQUI COMEÇA A PARTE INICIAL - RESPONSÁVEL PELOS ESTUDANTES JAMILE GONÇALVES, JANIELY RIBEIRO E MARIA DE FATIMA
@@ -1377,17 +1376,9 @@ def menu_inicial():
         sleep(0.3)
         print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-<<<<<<< HEAD
         print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
         sleep(0.3)
         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
-=======
-        print("\033[3m5 - CADASTRAR TREINOS\033[m")
-        sleep(0.3)
-        print("\033[3m6 - GERENCIAR TREINOS\033[m")
-        sleep(0.3)
-        print("\033[1m0 - SAIR DO PROGRAMA\033[m")
->>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
         sleep(0.3)
         
         opcao = int(input("Digite uma das opções aqui: "))
@@ -1419,19 +1410,10 @@ def menu_inicial():
             listar_alunos()
         
         elif opcao == 5:
-<<<<<<< HEAD
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
             cronograma_treinos_academia()
-=======
-            print("Sinta-se a vontade para montar seu treino personalizado!")
-            cronograma_treinos_academia()
-        
-        elif opcao == 6:
-            print("Seja bem vindo ao Gerenciamento de Treinos da Academia!")
-            gerenciamento_treinos()
->>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
 
         elif opcao == 0:
             print("Obrigado por utilizar o nosso programa!!")
@@ -1443,5 +1425,3 @@ def menu_inicial():
 menu_introdutorio()
 
 #FIM DA PARTE DA MARIA DE FATIMA
-=======
->>>>>>> 7a95afc15bc51bc8cbca99c87188d83173ad56a6:funcoes_parte_central.py
