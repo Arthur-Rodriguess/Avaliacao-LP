@@ -164,7 +164,7 @@ def listar_alunos():
 #FIM DA PARTE DA JANIELY  
 
 #INÍCIO DA PARTE DA MARIA DE FATIMA
-#FUNÇÃO MENU 2
+#FUNÇÃO MENU INICIAL
 def menu_inicial():
     while True:
         print("\033[1mSISTEMA DE ACADEMIA\033[m")

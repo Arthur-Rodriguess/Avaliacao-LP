@@ -105,7 +105,7 @@ def menu_inicial():
         else:
             print("número inválido/voltar ao menu")
 
-#MENU DA PARTE CENTRAL
+#MENU DA PARTE INICIAL
 def menu_inicial():
     while True:
         print("\033[1mSISTEMA DE ACADEMIA\033[m")
@@ -133,6 +133,7 @@ def menu_inicial():
             system('cls')
             cadastrar_alunos()
 
+#FUNÇÃO DE GERENCIAMENTO DE TREINOS
 def gerenciamento_treinos():
     while True:
         print("SISTEMA DE ACADEMIA - GERENCIAMENTO DE TREINOS:")
