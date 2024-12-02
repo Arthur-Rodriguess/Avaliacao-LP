@@ -53,9 +53,7 @@ def menu_inicial():
         sleep(0.3)
         print("\033[1m4 - LISTAR ALUNOS\033[m")
         sleep(0.3)
-        print("\033[1m5 - IR PARA O GERENCIAMENTO DE TREINOS\033[m")
-        sleep(0.3)
-        print("\033[1m6 - ADICIONAR TREINOS DO ALUNO\033[m")
+        print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
         sleep(0.3)
         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
         sleep(0.3)
@@ -92,12 +90,15 @@ def menu_inicial():
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
+<<<<<<< HEAD
+=======
             gerenciamento_treinos()
 
         elif opcao == 6:
             print("\033[33mCARREGANDO...\033[m")
             sleep(1.5)
             system('cls')
+>>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
             cronograma_treinos_academia()
 
         elif opcao == 0:
@@ -108,6 +109,34 @@ def menu_inicial():
             print("número inválido/voltar ao menu")
 
 #MENU DA PARTE CENTRAL
+<<<<<<< HEAD
+# def menu_inicial():
+#     while True:
+#         print("\033[1mSISTEMA DE ACADEMIA\033[m")
+#         sleep(0.3)
+#         print("\033[1m1 - CADASTRAR MAIS ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m2 - ATUALIZAR ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m3 - REMOVER ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m4 - LISTAR ALUNOS\033[m")
+#         sleep(0.3)
+#         print("\033[1m5 - ADICIONAR TREINOS DO ALUNO\033[m")
+#         sleep(0.3)
+#         print("\033[1m0 - ENCERRAR PROGRAMA\033[m")
+#         sleep(0.3)
+        
+#         opcao = int(input("Digite uma das opções aqui: "))
+#         sleep(0.3)
+#         system('cls')
+        
+#         if opcao == 1:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             cadastrar()
+=======
 def gerenciamento_treinos():
     while True:
         print("SISTEMA DE ACADEMIA - GERENCIAMENTO DE TREINOS:")
@@ -126,10 +155,40 @@ def gerenciamento_treinos():
 
         if opcao == 2:
             cronograma_treinos_academia()
+>>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
             
-        elif opcao == 3:
-            atualizar_treino()
+#         elif opcao == 2:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             atualizar()
+            
+#         elif opcao == 3:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             remover()
+            
+#         elif opcao == 4:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             listar()
+        
+#         elif opcao == 5:
+#             print("\033[33mCARREGANDO...\033[m")
+#             sleep(1.5)
+#             system('cls')
+#             cronograma_treinos_academia()
 
+<<<<<<< HEAD
+#         elif opcao == 0:
+#             print("Obrigado por utilizar o nosso programa!!")
+#             break
+            
+#         else:
+#             print("número inválido/voltar ao menu")
+=======
         elif opcao == 4:
             remover_treino()
 
@@ -150,6 +209,7 @@ def gerenciamento_treinos():
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
             gerenciamento_treinos()
+>>>>>>> c799fc14f160c98e78879248bfa125eb28cebdf9
 
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
