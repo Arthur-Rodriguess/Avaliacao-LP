@@ -142,7 +142,7 @@ def gerenciamento_treinos():
         print("4 - REMOVER TREINOS")
         print("5 - BUSCAR TREINOS")
         print("6 - LISTAR TREINOS")
-        print("7 - VOLTAR AO MENU INICIAL")
+        print("7 - TROCAR DE USUÁRIO")
         print("0 - SAIR DO PROGRAMA")
         opcao = int(input("Digite sua escolha: "))
 
@@ -177,13 +177,12 @@ def gerenciamento_treinos():
             listar_treino()
 
         elif opcao == 7:
-            print("Você voltou ao Menu Inicial!")
-            menu_inicial()
+            trocar_usuario()
 
         elif opcao == 0:
             print("Programa Encerrado!")
             break
-
+        
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU CENTRAL")
             gerenciamento_treinos()
