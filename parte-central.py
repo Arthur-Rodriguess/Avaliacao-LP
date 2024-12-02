@@ -40,57 +40,57 @@ def cronograma_treinos_academia():
     print("17 - Liberação miofascial\033[m")
     sleep(0.3)
 
-    opcao = int(input("Digite: "))
+    opcao_treino = int(input("Digite: "))
 
-    if opcao == 1:
+    if opcao_treino == 1:
         exercicios_ombro()
         
-    elif opcao == 2:
+    elif opcao_treino == 2:
         exercicios_peitoral()
         
-    elif opcao == 3:
+    elif opcao_treino == 3:
         exercicios_costas()
         
-    elif opcao == 4:
+    elif opcao_treino == 4:
         exercicios_biceps()
         
-    elif opcao == 5:
+    elif opcao_treino == 5:
         exercicios_triceps()
         
-    elif opcao == 6:
+    elif opcao_treino == 6:
         exercicios_trapezio()
         
-    elif opcao == 7:
+    elif opcao_treino == 7:
         exercicios_antebraco()
         
-    elif opcao == 8:
+    elif opcao_treino == 8:
         exercicios_quadriceps()
         
-    elif opcao == 9:
+    elif opcao_treino == 9:
         exercicios_isquiotibiais()
         
-    elif opcao == 10:
+    elif opcao_treino == 10:
         exercicios_gluteos()
         
-    elif opcao == 11:
+    elif opcao_treino == 11:
         exercicios_panturrilha()
         
-    elif opcao == 12:
+    elif opcao_treino == 12:
         exercicios_abdomen()
         
-    elif opcao == 13:
+    elif opcao_treino == 13:
         exercicios_funcionais()
         
-    elif opcao == 14:
+    elif opcao_treino == 14:
         exercicios_aerobios()
         
-    elif opcao == 15:
+    elif opcao_treino == 15:
         exercicios_mobilidade()
         
-    elif opcao == 16:
+    elif opcao_treino == 16:
         exercicios_exercicios_livres()
         
-    elif opcao == 17:
+    elif opcao_treino == 17:
         exercicios_liberacao_miofascial()
         
     else:
@@ -104,13 +104,14 @@ cronograma_treinos_academia()
 #MENU DA PARTE CENTRAL
 def gerenciamento_treinos():
     while True:
-        print("Navegue pelos seus treinos e muito mais:")
+        print(f"Navegue pelos seus treinos e muito mais:")
         print("1 - Volte ao Menu Inicial")
         print("2 - Cadastrar mais Treinos")
         print("3 - Atualizar Treinos")
         print("4 - Remover Treinos")
         print("5 - Buscar Treino")
         print("6 - Listar Treinos")
+        print("7 - Trocar de Usuário")
         print("0 - Encerrar Programa")
         opcao = int(input("Digite sua escolha: "))
 
@@ -132,7 +133,13 @@ def gerenciamento_treinos():
 
         elif opcao == 6:
             listar_treino()
-
+            
+        elif opcao == 7:
+            trocar_usuario()
+            
         else:
             print("DIGITO INVÁLIDO/VOLTAR AO MENU")
             
+
+
+    
