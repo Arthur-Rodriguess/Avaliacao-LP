@@ -8,6 +8,7 @@ from time import sleep
 
 #FUNÇÃO DA LISTA DE EXERCÍCIOS DO PRÓPRIO ALUNO
 lista_exercicios = []
+lista_exercicios_codigo = []
 
 #FUNÇÕES DA PÁGINA CENTRAL
 
@@ -33,38 +34,60 @@ def exercicios_ombro():
 
     if opcao_treino == 1:
         lista_exercicios.append("Elevação Unilateral Inclinada") 
+        opcao_codigo_treino = lista_exercicios("Elevação Unilateral Inclinada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Abdução Ombro Polia")
+        opcao_codigo_treino = lista_exercicios("Abdução Ombro Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Elevação Lateral Sentada")
+        opcao_codigo_treino = lista_exercicios("Elevação Lateral Sentada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Elevação Frontal Unilateral Polia")
+        opcao_codigo_treino = lista_exercicios("Elevação Frontal Unilateral Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Face Pull")
+        opcao_codigo_treino = lista_exercicios("Face Pull")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Elevação Frontal Corda Polia")
+        opcao_codigo_treino = lista_exercicios("Elevação Frontal Corda Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Desenvolvimento Harnold")
+        opcao_codigo_treino = lista_exercicios("Desenvolvimento Harnold")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Desenvolvimento Halteres")
+        opcao_codigo_treino = lista_exercicios("Desenvolvimento Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Elevação Unilateral")
+        opcao_codigo_treino = lista_exercicios("Elevação Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Elevação Frontal Halteres")
+        opcao_codigo_treino = lista_exercicios("Elevação Frontal Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     else:
         print("DIGITO INVÁLIDO/VOLTAR AO CRONOGRAMA DE TREINOS")
@@ -87,38 +110,60 @@ def exercicios_peitoral():
     opcao_treino = int(input("Digite: "))
 
     if opcao_treino == 1:
-        lista_exercicios.append("Crucifixo Cross Halteres Baixa") 
+        lista_exercicios.append("Crucifixo Cross Halteres Baixa")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Cross Halteres Baixa")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Crucifixo Alternado Cross Polia Baixa")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Alternado Cross Polia Baixa")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Mergulho em Barra Paralelas")
+        opcao_codigo_treino = lista_exercicios("Mergulho em Barra Paralelas")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Crucifixo Cross Polia Média")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Cross Polia Média")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Crucifixo Supino Reto")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Supino Reto")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Supino Inclinado Barra")
+        opcao_codigo_treino = lista_exercicios("Supino Inclinado Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Supino Inclinado Halteres")
+        opcao_codigo_treino = lista_exercicios("Supino Inclinado Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Crucifixo Cross Polia Alta")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Cross Polia Alta")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Supino Reto Halteres")
+        opcao_codigo_treino = lista_exercicios("Supino Reto Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Crucifixo Halteres Supino Declinado")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Halteres Supino Declinado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         lista_exercicios.append(seu_exercicio)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
@@ -144,38 +189,60 @@ def exercicios_costas():
 
     if opcao_treino == 1:
         lista_exercicios.append("Crucifixo Inverso Polia") 
+        opcao_codigo_treino = lista_exercicios("Crucifixo Inverso Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Remada Unilateral Polia Alta")
+        opcao_codigo_treino = lista_exercicios("Remada Unilateral Polia Alta")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Crucifixo Inverso Banco")
+        opcao_codigo_treino = lista_exercicios("Crucifixo Inverso Banco")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Remada Baixa Neutra")
+        opcao_codigo_treino = lista_exercicios("Remada Baixa Neutra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Remada Smith Pronada")
+        opcao_codigo_treino = lista_exercicios("Remada Smith Pronada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Remada Curvada Polia")
+        opcao_codigo_treino = lista_exercicios("Remada Curvada Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Pulley Frente Neutro")
+        opcao_codigo_treino = lista_exercicios("Pulley Frente Neutro")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Puxada Frontal Pegada Neutra Aberta")
+        opcao_codigo_treino = lista_exercicios("Puxada Frontal Pegada Neutra Aberta")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Pulley Trás")
+        opcao_codigo_treino = lista_exercicios("Pulley Trás")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Pulley Triângulo")
+        opcao_codigo_treino = lista_exercicios("Pulley Triângulo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -199,39 +266,61 @@ def exercicios_biceps():
     opcao_treino = int(input("Digite: "))
 
     if opcao_treino == 1:
-        lista_exercicios.append("Rosca Spider Halteres") 
+        lista_exercicios.append("Rosca Spider Halteres")
+        opcao_codigo_treino = lista_exercicios("Rosca Spider Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino) 
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Rosca Concentrada")
+        opcao_codigo_treino = lista_exercicios("Rosca Concentrada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Rosca Unilateral Polia Alta")
+        opcao_codigo_treino = lista_exercicios("Rosca Unilateral Polia Alta")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Rosca Direta Banco 45 (Graus)")
+        opcao_codigo_treino = lista_exercicios("Rosca Direta Banco 45 (Graus)")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Rosca Spider Barra")
+        opcao_codigo_treino = lista_exercicios("Rosca Spider Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Rosca Direta na Polia Baixa com Corda")
+        opcao_codigo_treino = lista_exercicios("Rosca Direta na Polia Baixa com Corda")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Rosca Alternada Sentado")
+        opcao_codigo_treino = lista_exercicios("Rosca Alternada Sentado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Rosca Scott com Barra 'H'")
+        opcao_codigo_treino = lista_exercicios("Rosca Scott com Barra 'H'")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Rosca Direta Barra")
+        opcao_codigo_treino = lista_exercicios("Rosca Direta Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Rosca Direta Barra H")
+        opcao_codigo_treino = lista_exercicios("Rosca Direta Barra H")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -256,38 +345,60 @@ def exercicios_triceps():
 
     if opcao_treino == 1:
         lista_exercicios.append("Tríceps Testa Máquina") 
+        opcao_codigo_treino = lista_exercicios("Tríceps Testa Máquina")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Tríceps Mergulho Livre")
+        opcao_codigo_treino = lista_exercicios("Tríceps Mergulho Livre")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Tríceps Coíse Unilateral")
+        opcao_codigo_treino = lista_exercicios("Tríceps Coíse Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Tríceps Coíse Pegada Neutra")
+        opcao_codigo_treino = lista_exercicios("Tríceps Coíse Pegada Neutra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Tríceps Máquina")
+        opcao_codigo_treino = lista_exercicios("Tríceps Máquina")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Tríceps Pulley Barra W")
+        opcao_codigo_treino = lista_exercicios("Tríceps Pulley Barra W")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Tríceps Francês Barra")
+        opcao_codigo_treino = lista_exercicios("Tríceps Francês Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Tríceps Francês Barra W")
+        opcao_codigo_treino = lista_exercicios("Tríceps Francês Barra W")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Tríceps Testa Polia Corda")
+        opcao_codigo_treino = lista_exercicios("Tríceps Testa Polia Corda")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Tríceps Francês Halteres Unilateral")
+        opcao_codigo_treino = lista_exercicios("Tríceps Francês Halteres Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -311,39 +422,61 @@ def exercicios_trapezio():
     opcao_treino = int(input("Digite: "))
 
     if opcao_treino == 1:
-        lista_exercicios.append("Encolhimento de Ombro pela Frente Barra") 
+        lista_exercicios.append("Encolhimento de Ombro pela Frente Barra")
+        opcao_codigo_treino = lista_exercicios("Encolhimento de Ombro pela Frente Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino) 
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Encolhimento de Ombro Barra Atrás")
+        opcao_codigo_treino = lista_exercicios("Encolhimento de Ombro Barra Atrás")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Encolhimento de Ombro Halteres")
+        opcao_codigo_treino = lista_exercicios("Encolhimento de Ombro Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Face Pull")
+        opcao_codigo_treino = lista_exercicios("Face Pull")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Remada Alta Anilha")
+        opcao_codigo_treino = lista_exercicios("Remada Alta Anilha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Remada Alta Polia")
+        opcao_codigo_treino = lista_exercicios("Remada Alta Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Elevação Escapular")
+        opcao_codigo_treino = lista_exercicios("Elevação Escapular")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Remada Alta Barra")
+        opcao_codigo_treino = lista_exercicios("Remada Alta Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Adução Escapula Polia Baixa")
+        opcao_codigo_treino = lista_exercicios("Adução Escapula Polia Baixa")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Remada Alta Barra")
+        opcao_codigo_treino = lista_exercicios("Remada Alta Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -368,38 +501,60 @@ def exercicios_antebraco():
 
     if opcao_treino == 1:
         lista_exercicios.append("Antebraço Máquina") 
+        opcao_codigo_treino = lista_exercicios("Antebraço Máquina")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Lenhador")
+        opcao_codigo_treino = lista_exercicios("Lenhador")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Rosca Punho Halteres")
+        opcao_codigo_treino = lista_exercicios("Rosca Punho Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Rosca Direta Giro Inverso Halteres")
+        opcao_codigo_treino = lista_exercicios("Rosca Direta Giro Inverso Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Rosca Inversa Polia")
+        opcao_codigo_treino = lista_exercicios("Rosca Inversa Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Rosca Inversa Halteres")
+        opcao_codigo_treino = lista_exercicios("Rosca Inversa Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Rosca Punho Barra")
+        opcao_codigo_treino = lista_exercicios("Rosca Punho Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Rosca Punho")
+        opcao_codigo_treino = lista_exercicios("Rosca Punho")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Rosca Punho Polia Sentado")
+        opcao_codigo_treino = lista_exercicios("Rosca Punho Polia Sentado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Giro Punho")
+        opcao_codigo_treino = lista_exercicios("Giro Punho")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -426,38 +581,60 @@ def exercicios_quadriceps():
 
     if opcao_treino == 1:
         lista_exercicios.append("Afundo Barra Livre") 
+        opcao_codigo_treino = lista_exercicios("Afundo Barra Livre")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Afundo com Halteres")
+        opcao_codigo_treino = lista_exercicios("Afundo com Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Afundo com Step")
+        opcao_codigo_treino = lista_exercicios("Afundo com Step")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Afundo com Step + Afundo")
+        opcao_codigo_treino = lista_exercicios("Afundo com Step + Afundo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Afundo Smith")
+        opcao_codigo_treino = lista_exercicios("Afundo Smith")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Afundo Suspendo Smith")
+        opcao_codigo_treino = lista_exercicios("Afundo Suspendo Smith")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Agachamento Barra")
+        opcao_codigo_treino = lista_exercicios("Agachamento Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Agachamento Frontal + Sumô Halteres")
+        opcao_codigo_treino = lista_exercicios("Agachamento Frontal + Sumô Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Agachamento Frontal Halteres")
+        opcao_codigo_treino = lista_exercicios("Agachamento Frontal Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Agachamento Halteres Lateral")
+        opcao_codigo_treino = lista_exercicios("Agachamento Halteres Lateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -482,38 +659,60 @@ def exercicios_isquiotibiais():
 
     if opcao_treino == 1:
         lista_exercicios.append("Stiff Halteres Step") 
+        opcao_codigo_treino = lista_exercicios("Stiff Halteres Step")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Stiff Polia Baixa")
+        opcao_codigo_treino = lista_exercicios("Stiff Polia Baixa")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Flexor Deitado com Halteres")
+        opcao_codigo_treino = lista_exercicios("Flexor Deitado com Halteres")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Mesa Flexora Unilateral")
+        opcao_codigo_treino = lista_exercicios("Mesa Flexora Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Stiff Polia Baixa com Step")
+        opcao_codigo_treino = lista_exercicios("Stiff Polia Baixa com Step")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Hiperextensão Lombar")
+        opcao_codigo_treino = lista_exercicios("Hiperextensão Lombar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Stiff Smith")
+        opcao_codigo_treino = lista_exercicios("Stiff Smith")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Extensão Glúteo Polia")
+        opcao_codigo_treino = lista_exercicios("Extensão Glúteo Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Stiff com Step")
+        opcao_codigo_treino = lista_exercicios("Stiff com Step")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Posterior Harck")
+        opcao_codigo_treino = lista_exercicios("Posterior Harck")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -538,38 +737,60 @@ def exercicios_gluteos():
 
     if opcao_treino == 1:
         lista_exercicios.append("Abdução Máquina Pé") 
+        opcao_codigo_treino = lista_exercicios("Abdução Máquina Pé")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Glúteo Máquina 4 Apoio Pé")
+        opcao_codigo_treino = lista_exercicios("Glúteo Máquina 4 Apoio Pé")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Abdução Polia")
+        opcao_codigo_treino = lista_exercicios("Abdução Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Extensão + Flexão Quadril Caneleira")
+        opcao_codigo_treino = lista_exercicios("Extensão + Flexão Quadril Caneleira")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Glúteo Máquina 4 Apoio Deitado")
+        opcao_codigo_treino = lista_exercicios("Glúteo Máquina 4 Apoio Deitado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Extensão Quadril Polia Banco")
+        opcao_codigo_treino = lista_exercicios("Extensão Quadril Polia Banco")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Extensão Quadril Caneleira")
+        opcao_codigo_treino = lista_exercicios("Extensão Quadril Caneleira")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Elevação Pelvica Barra")
+        opcao_codigo_treino = lista_exercicios("Elevação Pelvica Barra")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Abdução Polia Deitada")
+        opcao_codigo_treino = lista_exercicios("Abdução Polia Deitada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Extensão Quadril Polia")
+        opcao_codigo_treino = lista_exercicios("Extensão Quadril Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -594,38 +815,60 @@ def exercicios_panturrilha():
 
     if opcao_treino == 1:
         lista_exercicios.append("Panturrilha Unilateral Step") 
+        opcao_codigo_treino = lista_exercicios("Panturrilha Unilateral Step")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Panturrilha Sentado Unilateral")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Sentado Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Panturrilha Pé")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Pé")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Panturrilha Inclinada Pé")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Inclinada Pé")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Panturrilha Smith")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Smith")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Panturrilha Sentado")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Sentado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Panturrilha Livre")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Livre")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Panturrilha Harck Burrinho")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Harck Burrinho")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Panturrilha Leg 45 (Graus)")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Leg 45 (Graus)")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Panturrilha Sentado Unilateral + Bilateral")
+        opcao_codigo_treino = lista_exercicios("Panturrilha Sentado Unilateral + Bilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -652,38 +895,60 @@ def exercicios_abdomen():
 
     if opcao_treino == 1:
         lista_exercicios.append("Abdominal Prancha Unilateral") 
+        opcao_codigo_treino = lista_exercicios("Abdominal Prancha Unilateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Abdominal Oblíquo Banco Cruzado")
+        opcao_codigo_treino = lista_exercicios("Abdominal Oblíquo Banco Cruzado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Abdominal Supra Polia")
+        opcao_codigo_treino = lista_exercicios("Abdominal Supra Polia")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Abdominal Supra Polia Tocando Calcanhar")
+        opcao_codigo_treino = lista_exercicios("Abdominal Supra Polia Tocando Calcanhar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Abdominal Prancha")
+        opcao_codigo_treino = lista_exercicios("Abdominal Prancha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Abdominal Infra L")
+        opcao_codigo_treino = lista_exercicios("Abdominal Infra L")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Abdominal Canivete")
+        opcao_codigo_treino = lista_exercicios("Abdominal Canivete")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Abdominal Canoa")
+        opcao_codigo_treino = lista_exercicios("Abdominal Canoa")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Abdominal V-Sit com Anilha")
+        opcao_codigo_treino = lista_exercicios("Abdominal V-Sit com Anilha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Abdominal com Carga")
+        opcao_codigo_treino = lista_exercicios("Abdominal com Carga")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -708,38 +973,60 @@ def exercicios_funcionais():
 
     if opcao_treino == 1:
         lista_exercicios.append("Agacha Press Duplo") 
+        opcao_codigo_treino = lista_exercicios("Agacha Press Duplo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Agacha Lateral")
+        opcao_codigo_treino = lista_exercicios("Agacha Lateral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Aganha + Puxada Frontal")
+        opcao_codigo_treino = lista_exercicios("Aganha + Puxada Frontal")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Agacha Press Alter")
+        opcao_codigo_treino = lista_exercicios("Agacha Press Alter")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Agachamento com Desenvolvimento")
+        opcao_codigo_treino = lista_exercicios("Agachamento com Desenvolvimento")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Corrida Calcanhar")
+        opcao_codigo_treino = lista_exercicios("Corrida Calcanhar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Passada Alternado Saltando")
+        opcao_codigo_treino = lista_exercicios("Passada Alternado Saltando")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Perdigueiro")
+        opcao_codigo_treino = lista_exercicios("Perdigueiro")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Agacha Duplo")
+        opcao_codigo_treino = lista_exercicios("Agacha Duplo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Lenhador")
+        opcao_codigo_treino = lista_exercicios("Lenhador")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -763,39 +1050,61 @@ def exercicios_aerobios():
     opcao_treino = int(input("Digite: "))
 
     if opcao_treino == 1:
-        lista_exercicios.append("Eliptio") 
+        lista_exercicios.append("Eliptio")
+        opcao_codigo_treino = lista_exercicios("Eliptio")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino) 
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Trote")
+        opcao_codigo_treino = lista_exercicios("Trote")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Transport")
+        opcao_codigo_treino = lista_exercicios("Transport")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Sprint")
+        opcao_codigo_treino = lista_exercicios("Sprint")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Remo")
+        opcao_codigo_treino = lista_exercicios("Remo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Bicicleta")
+        opcao_codigo_treino = lista_exercicios("Bicicleta")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Corrida Esteira")
+        opcao_codigo_treino = lista_exercicios("Corrida Esteira")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Caminhada")
+        opcao_codigo_treino = lista_exercicios("Caminhada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Corrida com Inclinação")
+        opcao_codigo_treino = lista_exercicios("Corrida com Inclinação")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Pular Corda")
+        opcao_codigo_treino = lista_exercicios("Pular Corda")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -819,38 +1128,60 @@ def exercicios_mobilidade():
 
     if opcao_treino == 1:
         lista_exercicios.append("Alongamento Borboleta com Torção") 
+        opcao_codigo_treino = lista_exercicios("Alongamento Borboleta com Torção")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Alongamento Adutor-Mão a Frente")
+        opcao_codigo_treino = lista_exercicios("Alongamento Adutor-Mão a Frente")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Alongamento Borboleta Torção Sentado")
+        opcao_codigo_treino = lista_exercicios("Alongamento Borboleta Torção Sentado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Mobilidade Quadril de Cócoras")
+        opcao_codigo_treino = lista_exercicios("Mobilidade Quadril de Cócoras")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Alongamento Borboleta Flexão Coluna")
+        opcao_codigo_treino = lista_exercicios("Alongamento Borboleta Flexão Coluna")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Alongamento Ombro Cruzado")
+        opcao_codigo_treino = lista_exercicios("Alongamento Ombro Cruzado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Mobilidade de Coluna na Prancha")
+        opcao_codigo_treino = lista_exercicios("Mobilidade de Coluna na Prancha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Alongamento Escorpião")
+        opcao_codigo_treino = lista_exercicios("Alongamento Escorpião")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Rotação de Cotovelo e Braço 4 Apoio")
+        opcao_codigo_treino = lista_exercicios("Rotação de Cotovelo e Braço 4 Apoio")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Rotação Lombar Sentado")
+        opcao_codigo_treino = lista_exercicios("Rotação Lombar Sentado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -874,38 +1205,60 @@ def exercicios_exercicios_livres():
 
     if opcao_treino == 1:
         lista_exercicios.append("Deslocamento Lateral Salto") 
+        opcao_codigo_treino = lista_exercicios("Deslocamento Lateral Salto")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Corrida no Lugar")
+        opcao_codigo_treino = lista_exercicios("Corrida no Lugar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Deslocamento Lateral Cruzado")
+        opcao_codigo_treino = lista_exercicios("Deslocamento Lateral Cruzado")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Elevação de Joelho")
+        opcao_codigo_treino = lista_exercicios("Elevação de Joelho")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Deslocamento Lateral Mão Chão")
+        opcao_codigo_treino = lista_exercicios("Deslocamento Lateral Mão Chão")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Extensão Lombar")
+        opcao_codigo_treino = lista_exercicios("Extensão Lombar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Afundo Isométrico Arranque Braços")
+        opcao_codigo_treino = lista_exercicios("Afundo Isométrico Arranque Braços")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Flexão Fechada")
+        opcao_codigo_treino = lista_exercicios("Flexão Fechada")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Afundo")
+        opcao_codigo_treino = lista_exercicios("Afundo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Agachamento Dentro e Fora")
+        opcao_codigo_treino = lista_exercicios("Agachamento Dentro e Fora")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -931,38 +1284,60 @@ def exercicios_liberacao_miofascial():
 
     if opcao_treino == 1:
         lista_exercicios.append("Liberação Lombar") 
+        opcao_codigo_treino = lista_exercicios("Liberação Lombar")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 2:
         lista_exercicios.append("Liberação Serratil")
+        opcao_codigo_treino = lista_exercicios("Liberação Serratil")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 3:
         lista_exercicios.append("Liberação Tensor da Fáscia Lata")
+        opcao_codigo_treino = lista_exercicios("Liberação Tensor da Fáscia Lata")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 4:
         lista_exercicios.append("Liberação Panturrilha")
+        opcao_codigo_treino = lista_exercicios("Liberação Panturrilha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 5:
         lista_exercicios.append("Liberação Psoas")
+        opcao_codigo_treino = lista_exercicios("Liberação Psoas")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 6:
         lista_exercicios.append("Liberação Peitoral")
+        opcao_codigo_treino = lista_exercicios("Liberação Peitoral")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 7:
         lista_exercicios.append("Liberação Glúteo")
+        opcao_codigo_treino = lista_exercicios("Liberação Glúteo")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 8:
         lista_exercicios.append("Liberação Posterior")
+        opcao_codigo_treino = lista_exercicios("Liberação Posterior")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 9:
         lista_exercicios.append("Liberação Quadríceps")
+        opcao_codigo_treino = lista_exercicios("Liberação Quadríceps")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 10:
         lista_exercicios.append("Liberação Fascia Plantar com Bolinha")
+        opcao_codigo_treino = lista_exercicios("Liberação Fascia Plantar com Bolinha")
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
     elif opcao_treino == 11:
         print("Seu exercício não se encontra entre os principais? Digite você mesmo o seu: ")
         seu_exercicio = str(input("Digite o seu exercício: "))
         lista_exercicios.append(seu_exercicio)
+        opcao_codigo_treino = lista_exercicios(seu_exercicio)
+        lista_exercicios_codigo = lista_exercicios.append(opcao_codigo_treino)
         print(f"Exercício(s) {lista_exercicios} adicionado(s) com sucesso!")
 
     else:
@@ -970,6 +1345,11 @@ def exercicios_liberacao_miofascial():
 
 #FUNÇÃO DO CRONOGRAMA DE TREINOS
 def cronograma_treinos_academia():
+    aluno_escolhido = str(input("Digite o Aluno que você quer alterar: "))
+    for indice, aluno in enumerate(lista_alunos):
+        if aluno == aluno_escolhido:
+            print("Aluno encontrado e acessado, agora você pode adicionar treinos para ele e gerenciar o que ele já tem.")
+    
     print("Seja bem vindo ao Cronograma da Academia!")
     print("Preciso que você primeiramente digite qual membro irá trabalhar para que eu possa lhe entregar os exercícios cabíveis.")
     print("<--Aqui são os treinos para superior:-->")
@@ -1201,6 +1581,12 @@ def listar_treino():
     for treino in lista_exercicios:
         print(f"Seus treinos cadastrados até então são: {lista_exercicios}")
 
+def trocar_usuario():
+    aluno_escolhido = str(input("Digite o Aluno que você quer alterar: "))
+    for indice, aluno in enumerate(lista_alunos):
+        if aluno == aluno_escolhido:
+            print("Aluno encontrado e acessado, agora você pode adicionar treinos para ele e gerenciar o que ele já tem.")
+            
 #AQUI, AS FUNÇÕES DA PARTE INICIAL
 #AQUI COMEÇA A PARTE INICIAL - RESPONSÁVEL PELOS ESTUDANTES JAMILE GONÇALVES, JANIELY RIBEIRO E MARIA DE FATIMA
 #INÍCIO DA PARTE DO ARTHUR
@@ -1421,7 +1807,9 @@ def menu_inicial():
             
         else:
             print("número inválido/voltar ao menu")
+
 #INICIALIZAÇÃO DO PROGRAMA
 menu_introdutorio()
 
 #FIM DA PARTE DA MARIA DE FATIMA
+
