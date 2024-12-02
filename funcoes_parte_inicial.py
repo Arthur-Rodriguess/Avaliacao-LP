@@ -224,11 +224,11 @@ def menu_inicial():
             gerenciamento_treinos()
 
         elif opcao == 0:
-            print("Obrigado por utilizar o nosso programa!!")
+            print("Programa Encerrado!")
             break
             
         else:
-            print("número inválido/voltar ao menu")
+            print("NÚMERO INVÁLIDO/VOLTAR AO MENU INICIAL")
             
 #INICIALIZAÇÃO DO PROGRAMA
 menu_introdutorio()
